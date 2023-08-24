@@ -3,21 +3,27 @@ import Header from "./Header"
 import Sidebar from "./Sidebar"
 import { styled } from "styled-components"
 
+
+const StyledAppLayout = styled.div`
+  display : grid;
+  grid-template-columns: 26rem 1fr;
+  grid-template-rows: auto 1fr;
+  height : 100vh;
+`
 const Main = styled.main`
-  background-color: green;
+  background-color: var(--color-grey-50);
   padding : 4rem 4.8rem 6.4rem;
 `
 
 const AppLayout = () => {
   return (
-    <div>
+    <StyledAppLayout>
         <Header />
         <Sidebar />
-        <p>Hello app layout</p>
         <Main>
             <Outlet />
         </Main>
-    </div>
+    </StyledAppLayout>
   )
 }
 
