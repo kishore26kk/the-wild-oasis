@@ -6,7 +6,7 @@ export async function getCabins() {
         .select('*')
         
     if (error) {
-        console.error(error); git 
+        console.error(error);
         throw new Error("Cabins could not be loaded");
     }
     return data;
