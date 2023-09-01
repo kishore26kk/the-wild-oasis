@@ -73,7 +73,7 @@ const MainNav = () => {
               <span>
                 Cabins
               </span>
-            </StyledNavLink>
+            </StyledNavLink> 
           </li>
           <li>
             <StyledNavLink to="/users">
